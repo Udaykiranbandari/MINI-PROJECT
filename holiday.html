@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+    <link rel="stylesheet" href="./holiday.css">
+</head>
+<body>
+    <div class="container">
+      <nav><a class="header" href="#home">HOME</a></nav>
+      <nav><a class="header" href="#about">ABOUT</a></nav>
+      <nav><a class="header" href="#menu">MENU</a></nav>
+      <nav><a class="header" href="#where">WHERE</a></nav>
+    </div>
+    <div class="container2">
+<img src="./cafeimg.jpg"  id="home" alt="" style="width: 100%;height: 500px; display: inline; position: relative;">
+<p class="center"> the <br>cafe</p>
+<p class="last">open from 6am to 5pm</p>
+<p class="last2">15 Adr street, 5015</p>
+</div>
+<br><br><br>
+<center><p class="middle" id="about">ABOUT THE CAFE</p></center>
+<br><br><br>
+<div class="big">
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>In addition to our full espresso and brew bar menu, we serve fresh made-to <br>-order breakfast and lunch sandwiches, as well as a selection of sides and <br> salads and other good stuff.</p>
+</div> <br><br>
+<p class="big" style="background-color:lightcyan; display:inline-block;position: relative; left:22%;">
+
+    "Use products from nature for what it's worth - but never too early, nor <br> <br> too late." Fresh is the new sweet. <br><br>
+    
+    Chef, Coffeeist and Owner: Liam Brown
+    </p>
+    <br>
+    <br><br>
+    <div class="big" style="padding: 0; height: 400px;">
+        <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="">
+    </div>
+    <br>
+    <p style="left:280px;position: relative;"> <b>Opening hours</b>: everyday from 6am to 5pm.</p>
+    <br>
+    <p style="left:280px;position: relative;">  <b>Address:</b>15 Adr street, 5015, NY </p> 
+    <br> <br><br>
+    <div style="background-color: black; color: white; display:inline-block; position: relative; left: 45%; letter-spacing: 3px; padding: 3px;">
+        <p id="menu">THE MENU </p>
+    </div>
+    <br><br><br>
+    <div class="container-3" id="menu">
+      <div class="tabs">
+        <button class="tab-button active" onclick="openTab('eat')">Eat</button>
+        <button class="tab-button" onclick="openTab('drink')">Drink</button>
+    </div>
+    <div class="tab-content" id="eat"><br><br>
+        <h4>Bread Basket</h4>
+        <br>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+        <h4>Honey Almond Granola with Fruits</h4><br>
+        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+        <h4>Belgian Waffle</h4><br>
+        <p>Vanilla flavored batter with malted flour 7.50</p><br>
+        <h4>Scrambled Eggs</h4><br>
+        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+        <h4>Blueberry Pancakes</h4><br>
+        <p>With syrup, butter and lots of berries 8.50</p><br>
+      
+    </div>
+    <div class="tab-content" id="drink" style="display: none;"><br><br>
+        <h4>Coffee</h4><br>
+        <p>Regular Coffee 2.50</p><br>
+        <h4>Chocolate</h4><br>
+        <p>Chocolate expresso with milk 4.50</p><br>
+        <h4>Corretto</h4><br>
+        <p>whiskey and coffee 5.00</p><br>
+        <h4>Iced tea</h4><br>
+        <p>Hot tea, expect not hot 3.00</p><br>
+        <h4>Soda</h4><br>
+        <p>Coke, Sprite, Fanta, etc. 2.50</p><br>
+        </div>
+    
+    </div>
+    <script>
+      function openTab(tabName) {
+          const tabContents = document.querySelectorAll('.tab-content');
+          const tabButtons = document.querySelectorAll('.tab-button');
+          tabContents.forEach((tab) => tab.style.display = 'none');
+          tabButtons.forEach((btn) => btn.classList.remove('active'));
+          document.getElementById(tabName).style.display = 'block';
+          event.target.classList.add('active');
+      }
+    </script>
+    </div>
+    <br><br>
+    
+      <div>
+        <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="" style="position: relative; left: 21%; height: 400px;">
+      </div>
+      <br><br><br>
+      <p style="display: inline-block; background-color: black; color: white; left: 45%; ;position: relative; padding: 6px; letter-spacing: 3px;" id="where">WHERE TO FIND US</p><br><br><br>
+      <h4 style="position: relative; left: 21%;">Find us at some address at some place.</h4>
+      <br><br>
+      <div>
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" style="position: relative; left: 21%; height: 400px;">
+      </div><br>
+      <div class="combine">
+        <p> <b class="h">FYI!</b>We offer full-service catering for any event, large or small. We <br> understand your needs and we  will cater the food to satisfy the biggerst  <br>criteria of them all, both look and taste.</p>
+       </div>
+       <br>
+       <p style="position: relative; left: 21%; word-spacing: 3px; letter-spacing: 2px;">  <b>Reserve</b> a table, ask for today's special or just send us a message:
+       </p>
+       <br><br>
+       <div class="f">
+        <form action="" method="get">
+          <input class="o" type="text" name="name" placeholder="NAME" required>
+          <br>
+          <input class="o" type="text" name="how" placeholder="HOW MANY PEOPLE" required> <br>
+          <input class="o" type="datetime-local" name="date" required><br>
+          <input class="o" type="text" placeholder="Meassage / Special Requirements"><br>
+          <input  style="background-color: black; color: white; left: 21%; padding: 7px; border: 0;  position: relative;display: inline-block;" type="submit" name="submit" value="SEND MESSAGE" >
+        </form> 
+
+       </div>
+       
+    
+</div>
+<br><br><br><br>
+<h3 style="display: flex; justify-content: center;">Powered by  &nbsp;<a class="n" href="https://www.w3schools.com/w3css/default.asp">W3.css</a></h3>
+
+    
+    
+</body>
+</html>

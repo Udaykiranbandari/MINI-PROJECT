@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    z-index: 999;
+    position: fixed;
+    flex-shrink: 0;
+}
+.center{
+    position: absolute;
+    font-family: "Inconsolata", sans-serif;
+    color: white;
+    font-size:100px;
+    left: 40%;
+    top: 30%;
+}
+.last{
+    background-color: black;
+    color: white;
+    bottom:80px;
+    left: 30px;
+    position: absolute;
+}
+.last2{
+    position: absolute;
+    bottom: 80px;
+    left: 1100px;
+    color: white;
+}
+.middle{
+    display:inline-block;
+    background-color: black;
+    color: white;
+letter-spacing: 5px;
+padding: 4px;
+}
+.big{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+.combine
+{ 
+    display: flex;
+    justify-content: center;
+
+}
+.combine{
+    position: relative;
+    left: -1px;;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.h
+{
+    background-color: black;
+    color: white;
+}
+.o{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 9px;
+    position: relative;
+    left: 260px;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+
+}
+.n:hover{
+    color: green;
+}
+
+.header{
+    color: #fff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 10px;
+
+}
+
+a:hover{
+    background-color: rgb(189, 188, 188);
+    color: #000;
+    margin-left: 15px;
+    margin-right: 35px;
+    transition: 0.4 ease;
+}
+.container-3{
+    width: 650px;
+    height: 500px;
+    position: relative;
+    left: 25%;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.menu-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    
+}
+
+.menu-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    padding: 10px 160px;
+    border: 1px solid #ccc;
+    background-color: #f5f4f4;
+    cursor: pointer;
+    font-weight: bold;  
+}
+
+.tab-button.active {
+    background-color: #fff;
+    color: #333;
+}
+
+.tab-button:hover {
+    background-color: rgb(197, 193, 193);
+    color: white;
+}
+
+.tab-content {
+    text-align: left;
+    
+    
+}
+.tab-content h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
